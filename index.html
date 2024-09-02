@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+   
+
+
+    <header class="lg:px-16 px-4 bg-white flex flex-wrap items-center shadow-md">
+        <div class="flex-1 flex justify-between items-center">
+            <a href="#" class="text-xl">When2Meet</a>
+        </div>
+    
+    
+        <div class="hidden md:flex md:items-center md:w-auto w-full" >
+            <nav>
+                <ul class="md:flex items-center justify-between text-base text-gray-700 pt-4 md:pt-0">
+                    
+                    <li><a class="md:p-4 py-3 px-0 block md:mb-0 mb-2" href="signup.html">Signup</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<div class="flex  h-screen mybg">
+    <section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2 ">
+        <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+          <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+            <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+              Create an Event 
+            </h2>
+      
+            
+            <form action="">
+
+                <div>
+                    <label  class="block text-sm font-medium text-gray-700 dark:text-gray-100">Event Name </label>
+                    <div class="relative mt-1">
+                        <input type="text"  class="block w-full h-10 pl-8 pr-3 mt-1 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-blue-500" placeholder="Name it"/>
+                    </div>
+                    <div>
+    <label  class="block text-sm font-medium text-gray-700 dark:text-gray-100">Event Description</label>
+    <div class="relative mt-1">
+     
+        <textarea class="block w-full h-10 pl-8 pr-3 mt-1 text-sm text-gray-700 border focus:outline-none rounded shadow-sm focus:border-blue-500" placeholder="Describe your event"></textarea>
+    </div>
+</div>
+                </div>
+
+
+        <label >Start Date</label>
+        <input class="my-2" type="date" id="date" >
+        <label >End Date</label>
+        <input class="my-2" type="date" id="date" >
+        <br>
+
+       
+        <label >Duration</label>
+        <select id="options" >
+            <option > less than 1hr </option>
+            <option >Between 1 Hr to 2 Hr</option>
+            <option >More than 2 Hours</option>
+        </select>
+        <br><br>
+
+        <button class="bg-white px-4 py-2 rounded shadow-md">Submit</button>
+
+            </form>
+      
+           
+          </div>\
+          <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
+            <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+              Input Availability 
+            </h2>
+      
+            
+            <form action="">
+            
+                <table>
+                    
+                    <tr >
+                        <th>Sunday <br>
+                            <input type="checkbox"   value="Option 1"></th>
+                        <th>Monday <br>
+                            <input type="checkbox"   value="Option 1"></th>
+                        <th>Tuesdayc <br>
+                            <input type="checkbox"   value="Option 1"></th>
+                        <th>Wednesday <br>
+                            <input type="checkbox"   value="Option 1"></th>
+                        <th>Thursday <br>
+                            <input type="checkbox"   value="Option 1"></th>
+                        <th>Friday <br>
+                            <input type="checkbox"   value="Option 1"></th>
+                        <th>Saturday <br>
+                            <input type="checkbox"   value="Option 1"></th>
+                    </tr>
+
+                   
+                </table>
+
+            </form>
+      
+
+
+            <table>
+                <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+                    View Availability 
+                  </h2>
+                <tr >
+                    <th>Sunday </th>
+                    <th>Monday </th>
+                    <th>Tuesdayc </th>
+                    <th>Wednesday </th>
+                    <th>Thursday </th>
+                    <th>Friday </th>
+                    <th>Saturday </th>
+                </tr>
+
+                <tr>
+                    <td>Availible</td>
+                    <td>not Availible</td>
+                    <td>Availible</td>
+                    <td>Availible</td>
+                    <td> not Availible</td>
+                    <td> not Availible</td>
+                    <td>Availible</td>
+                </tr>
+               
+            </table>
+           
+          </div>
+          
+
+          
+        </div>
+      
+
+
+        <img
+          alt=""
+          src="meeting_03-150p-01.jpg"
+          class="h-56 w-full object-cover sm:h-full"
+        />
+      </section>
+</div>
+
+</body>
+</html>
